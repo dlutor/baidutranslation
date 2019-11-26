@@ -1,9 +1,9 @@
+# -*- coding: UTF-8 -*-
+import os,re
 import requests
-import os
-import re
 import execjs
 os.environ["EXECJS_RUNTIME"] = "Node"
-class trans(object):
+class Trans(object):
     def __init__(self):
         proxies = {'http': None, 'https': None}
         headers = {'User-Agent': "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)",
@@ -53,8 +53,8 @@ class trans(object):
         return r.json()
 
     def main(self):
-        print('输入一段文本,例如:Python is the best program lanugue in the word!\n')
         p='Python is the best programing language in the word!'
+        print('输入一段文本,例如:Python is the best program lanugue in the word!\n')
         result=self.transl_entozh(p)
         print('结果：'+result['trans_result']['data'][0]['dst'])
         while True:
@@ -68,5 +68,5 @@ class trans(object):
 
 
 if __name__ == '__main__':
-    t=trans()
+    t=Trans()
     t.main()
