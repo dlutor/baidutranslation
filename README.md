@@ -1,9 +1,9 @@
 # baidutranslation
 百度翻译公开api
 # 使用方法
-'''shell
+```shell
 pip install -r requirements.txt
-'''
+```
 ## 即时翻译
 ```python
 import translate
