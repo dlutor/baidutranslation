@@ -3,7 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-*.js linguist-language=python
+
+
 # C extensions
 *.so
 
